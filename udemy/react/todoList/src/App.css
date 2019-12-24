@@ -1,0 +1,13 @@
+.App {
+
+}
+
+.line {
+  width: 4px;
+  background: repeating-linear-gradient(45deg, black, transparent 100px);
+  height: 100vh;
+  position: absolute;
+  left: 51%;
+  top: 0px;
+
+}

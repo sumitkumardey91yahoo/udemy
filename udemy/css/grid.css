@@ -1,0 +1,15 @@
+.row {
+    margin: 0 auto;
+    margin-bottom: 5rem; 
+    max-width: 50rem;
+}
+
+/* .row:not(:last-child) {
+  
+    background: red;
+} */
+
+.row:nth-last-child(2) {
+    max-width: 0rem;
+    background: red;
+}
