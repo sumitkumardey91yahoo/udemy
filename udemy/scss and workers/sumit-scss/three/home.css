@@ -1,0 +1,14 @@
+body .home p {
+  color: red; }
+
+body .home div {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: pink; }
+
+body .home span {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: yellow; }

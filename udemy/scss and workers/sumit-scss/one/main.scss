@@ -1,0 +1,39 @@
+
+$sumit: green;
+@mixin name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+}
+
+body {
+    margin: 0;
+    .home {
+        background-color: pink;
+        @include name;
+
+        p {
+            color: $sumit;
+        }
+        h1 {
+            background-color: yellow;
+        }
+
+        &:hover {
+            background: darkblue;
+        }
+        .data {
+            &::first-letter {
+                font-size: xx-large;
+                color: black;
+            }
+            &::first-line {
+                color: blue;
+            }
+        }
+        
+    }
+
+   
+
+
+}

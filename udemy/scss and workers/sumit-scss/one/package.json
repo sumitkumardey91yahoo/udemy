@@ -1,0 +1,15 @@
+{
+  "name": "one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass:compiler": "node-sass main.scss style.css -w",
+    "sass": " node-sass --output-style compressed -o style.css main.sass"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

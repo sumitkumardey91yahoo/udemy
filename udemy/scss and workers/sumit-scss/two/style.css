@@ -1,0 +1,5 @@
+body .home {
+  color: yellow;
+  font-size: 70px; }
+  body .home:hover {
+    font-size: 40px; }

@@ -1,0 +1,17 @@
+body {
+  margin: 0; }
+  body .home {
+    background-color: pink;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large; }
+    body .home p {
+      color: green; }
+    body .home h1 {
+      background-color: yellow; }
+    body .home:hover {
+      background: darkblue; }
+    body .home .data::first-letter {
+      font-size: xx-large;
+      color: black; }
+    body .home .data::first-line {
+      color: blue; }

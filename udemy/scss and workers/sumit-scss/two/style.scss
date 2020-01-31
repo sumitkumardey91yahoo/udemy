@@ -1,0 +1,19 @@
+$color: yellow;
+
+@mixin raj {
+    font-size: 70px;
+
+}
+
+body {
+  
+    .home {
+        color: $color;
+        @include raj;
+
+         &:hover {
+            font-size: 40px;
+        }
+    }
+    
+}

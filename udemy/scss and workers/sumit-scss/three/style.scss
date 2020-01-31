@@ -1,0 +1,26 @@
+$name_color_body: red;
+$name_color_div: blue;  // declering varibale
+
+@mixin  mobiotics ($data) {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: $data;
+};
+
+
+body {
+  .home {
+    p {
+        color: $name_color_body;
+    }
+    div {
+        @include mobiotics(pink);
+    }
+    span {
+        @include mobiotics(yellow);
+    }
+  }
+}
+
+
