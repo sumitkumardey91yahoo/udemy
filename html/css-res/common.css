@@ -1,41 +1,72 @@
+:root {
+    --gutter-vertical: 30px;
+    --gutter-horizontal: 80px;
+
+  }
 .row1 {
-  margin-bottom: 30px;
+  margin-bottom: var(--gutter-horizontal);
 }
 
 .col-2-of-1 {
     background-color: red;
-    margin-right: 30px;
+    margin-right: var(--gutter-vertical);
     float: left;
-    width: calc((100% - 30px) / 2)
+    width: calc((100% - var(--gutter-vertical)) / 2)
 }
 
 .col-2-of-2 {
     background-color: blue;
     float: right;
-    margin-right: 30px;
-    width: calc((100% - 30px) / 2)
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - var(--gutter-vertical)) / 2)
 }
 
 
 .col-3-of-1 {
     background-color: red;
-    margin-right: 30px;
+    margin-right: var(--gutter-vertical);
     float: left;
-    width: calc((100% - 60px) / 3)
+    width: calc((100% - (var(--gutter-vertical) * 2)px) / 3)
 }
 
 .col-3-of-2 {
     background-color: blue;
     float: left;
-    margin-right: 30px;
-    width: calc((100% - 60px) / 3)
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 2)px) / 3)
 }
 
 .col-3-of-3 {
     background-color: yellow;
     float: left;
-    margin-right: 30px;
-    width: calc((100% - 60px) / 3)
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 2)px) / 3)
+}
+
+.col-4-of-1 {
+    background-color: yellow;
+    float: left;
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 3)px) / 4)
+
+}
+.col-4-of-2 {
+    background-color: pink;
+    float: left;
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 3)px) / 4)
+}
+.col-4-of-3 {
+    background-color: red;
+    float: left;
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 3)px) / 4)
+}
+.col-4-of-4 {
+    background-color: brown;
+    float: left;
+    margin-right: var(--gutter-vertical);
+    width: calc((100% - (var(--gutter-vertical) * 3)px) / 4)
 }
 
 .row1 div:last-child {
