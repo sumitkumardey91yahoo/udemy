@@ -73,8 +73,14 @@
     margin-right: 0px;
 }
 
+
+
 .row1::after {
     clear: both;
     content: '';
     display: block;
+}
+
+.main .row1:last-child {
+    margin-bottom: 0px;
 }
