@@ -1,7 +1,7 @@
 <template>
   <div>
-      {{mss}}
-
+      <b>i am child</b>
+     {{mss | reverse}}
   </div>
     
 </template>
@@ -10,8 +10,12 @@
 export default {
     data() {
         return {
-            mss: 'ok'
+            mss: 'kolkata'
         }
+    },
+    mounted() {
+        console.log("router", this.$route)
+        //this.mss = this.$route.params.id;
     },
     props: ['dataset']
 }

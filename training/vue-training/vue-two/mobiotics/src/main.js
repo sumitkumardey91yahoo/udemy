@@ -5,6 +5,15 @@ import vueRouter from 'vue-router'
 
 import { routes } from './routes/routes.js'
 
+import { store } from './store/store'
+
+
+
+Vue.filter('reverse', (d) => {
+
+  return d.split('').reverse().join('');
+})
+
 const router = new vueRouter({
   routes: routes,
   mode: 'history'
@@ -13,7 +22,8 @@ const router = new vueRouter({
 Vue.use(vueRouter)
 
 new Vue({
-  router,
+  router: router,
+  store: store,
   render: (abc) => {
     return abc(App)
   } 
