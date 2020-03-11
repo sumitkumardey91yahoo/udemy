@@ -3,7 +3,8 @@ body {
   body .home {
     background-color: pink;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: xx-large; }
+    font-size: xx-large;
+    color: "blue"; }
     body .home p {
       color: green; }
     body .home h1 {

@@ -2,12 +2,23 @@
   <!-- html part  props -->
   <div>
    <router-view></router-view>
+
+   <!-- <nice-handsome-button :rounded="true" color="red" size="large">My Button</nice-handsome-button> -->
+
   </div>
 </template>
 
 <script>
+//import Vue from 'vue'
+// import NiceHandsomeButton from "sumit-kumar-dey-popup";
+// import NiceHandsomeButton from "nice-handsome-button";
+
+// Vue.use(NiceHandsomeButton);
 
 import { eventBus } from './event'
+
+
+// Vue.use(NiceHandsomeButton);
 
   export default {
     data() {
@@ -18,6 +29,10 @@ import { eventBus } from './event'
     },
     methods: {
       
+
+    },
+    components: {
+      // 'nice-handsome-button' : NiceHandsomeButton
     },
     mounted() {
        console.log("done", 233229999)

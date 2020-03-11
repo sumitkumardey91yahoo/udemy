@@ -25,7 +25,10 @@ export default {
     },
     methods: {
         actChilda() {
-          this.$emit('cbFunction', [100, 'i am child'])
+         // this.$emit('cbFunction', [100, 'i am child'])
+
+          //this.$parent.pressMe('sumit')
+          console.log(this.$parent.dil)
         }
     }
 }

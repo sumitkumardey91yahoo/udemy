@@ -1,0 +1,22 @@
+{
+  "name": "webpack1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --progress --hide-modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.6"
+  },
+  "devDependencies": {
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack-cli": "^3.3.11"
+  }
+}

@@ -28,7 +28,8 @@ export default {
     data() {
         return {
             mss: "bangalore",
-            name: ''
+            name: '',
+            dil: 900000
         }
     },
     computed: {

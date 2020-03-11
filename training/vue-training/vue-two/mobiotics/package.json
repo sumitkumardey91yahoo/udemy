@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "nice-handsome-button": "0.0.9",
+    "sumit-kumar-dey-popup": "^1.0.3",
     "vue": "^2.6.10"
   },
   "devDependencies": {

@@ -1,15 +1,16 @@
 
 $sumit: green;
-@mixin name {
+@mixin name($color) {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: xx-large;
+    color: $color;
 }
 
 body {
     margin: 0;
     .home {
         background-color: pink;
-        @include name;
+        @include name("blue");
 
         p {
             color: $sumit;
