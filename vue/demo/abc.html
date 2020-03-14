@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     function data() {   
+      var data1 = localStorage.getItem('data');
+        var a = data1
+
+        var final = []; 
+        var m = a.split('/r/n')
+        m.pop()
+        for (let i in m) { 
+            var data = "";
+            var data = m[i].replace(/\"\[/g, "[")
+            data = data.replace(/\]\"/g, "]")
+            data = data.replace(/}\"/, '}');
+            data = data.replace(/\\"/g, '"');
+            final.push(JSON.parse(data))
+        }
+      return final;
+    }
+ 
+        
+    </script>
+</body>
+</html>
