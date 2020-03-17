@@ -12,6 +12,9 @@
 
 <script>
   import abc from './components/HelloWorld.vue'
+  import { eventBus } from './eventBus'
+
+  import { mapMutations } from 'vuex'
 
   export default {
     name: 'App',
@@ -28,6 +31,7 @@
       }
     },
     methods: {
+      ...mapMutations(['setColor']),
       done( data) {
         console.log(data)
         this.parent = data
@@ -40,6 +44,15 @@
       // this.$on('c-d-parent', (val) => {
       //   console.log("-----", val)
       // })
+     
+     setTimeout(() => {
+         eventBus.$on("send-from-child", (data) => {
+         this.parent = data;
+       })
+
+        this.setColor({name: "yellow"});
+     }, 5000)
+    
 
     }
   }

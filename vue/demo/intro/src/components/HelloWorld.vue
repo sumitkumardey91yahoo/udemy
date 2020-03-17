@@ -7,7 +7,9 @@
      <button type="button" @click="send()"> send </button>
 
    <hr/>
-    <done/>
+
+    <done></done>
+
   </div>
 </template>
 

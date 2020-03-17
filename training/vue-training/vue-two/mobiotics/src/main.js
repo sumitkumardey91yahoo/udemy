@@ -24,10 +24,10 @@ const router = new vueRouter({
 //   else next()
 //   })
 
-router.beforeEach((to, from, next) => {
-  if (to.fullPath !== '/login' && !localStorage.getItem('auth')) next({name: 'login'})
-  else next()
-})
+// router.beforeEach((to, from, next) => {
+//   if (to.fullPath !== '/login' && !localStorage.getItem('auth')) next({name: 'login'})
+//   else next()
+// })
 
 
 Vue.use(vueRouter)

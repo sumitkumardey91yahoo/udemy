@@ -1,35 +1,29 @@
 <template>
   <div>
-  i am from parent components {{mss[1]}}
-      <h1 :style="{color: getColor}">Color Vuex {{getColor}} </h1>
-      <h1>{{name}}</h1>
+     sjhsj
+    <button type="button" @click="pressMe">sumit--------</button>
 
-      <childA :child_data="100909" @cbFunction="pressMe">
-
-       <h1 slot="one"> i am here=== </h1>
-
-       <h1 slot="two"> i am here  done ***</h1>
-    
-      </childA>
 
   </div>
     
 </template>
 
 <script>
-import childA from './components/ChildA.vue'
+
 import { eventBus } from './event';
 
 import mixin  from './mixins'
 
 import { mapGetters, mapMutations, mapActions } from 'vuex'
 
+
 export default {
     data() {
         return {
             mss: "bangalore",
             name: '',
-            dil: 900000
+            dil: 900000,
+            count: 1
         }
     },
     computed: {
@@ -38,10 +32,16 @@ export default {
     methods: {
       ...mapMutations(['setColor']),
       ...mapActions(['actLocation']),
-      pressMe(e) {
-        console.log("reached====>", e)
-        this.mss = e;
-      }
+   
+
+       pressMe() {
+         if(this.count < 5) {
+           this.$router.push('/vuex')
+         
+         }
+           this.count++;
+          eventBus.$emit("sumit-sumit")
+        }
     },
     mounted() {
       setTimeout(() => {
@@ -73,9 +73,6 @@ export default {
 
     destroyed() {
       console.log(this); // I'm text inside the component.  
-    },
-    components: {
-      childA
     },
     mixins: [mixin]
 }

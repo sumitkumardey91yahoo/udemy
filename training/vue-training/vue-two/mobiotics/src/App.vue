@@ -3,6 +3,8 @@
   <div>
    <router-view></router-view>
 
+
+
    <!-- <nice-handsome-button :rounded="true" color="red" size="large">My Button</nice-handsome-button> -->
 
   </div>
@@ -28,7 +30,9 @@ import { eventBus } from './event'
       }
     },
     methods: {
-      
+        pressMe() {
+          eventBus.$emit("sumit-sumit")
+        }
 
     },
     components: {
@@ -41,6 +45,10 @@ import { eventBus } from './event'
     created() {
       eventBus.$on('event-data-global', (data) => {
        alert(data)
+      })
+
+      eventBus.$on('sumit', () => {
+          console.log("sumit")
       })
     }
   }

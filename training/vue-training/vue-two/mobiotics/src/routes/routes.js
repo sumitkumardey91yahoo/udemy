@@ -3,6 +3,8 @@ import parent from '../Parent.vue'
 import vuex from '../components/Vuex.vue'
 import login from '../components/login.vue'
 
+import init from '../components/sumit/Init.vue'
+
 
 export const routes = [
     {
@@ -26,6 +28,11 @@ export const routes = [
         name: 'login',
         path: '/login',
         component: login
+    },
+    {
+        name: 'init',
+        path: '/init',
+        component: init
     },
     {
         path: '*',

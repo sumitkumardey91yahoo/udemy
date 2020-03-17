@@ -6,3 +6,7 @@ export const getColor = (state) => {
 export const getName = (state) => {
     return state.name
 }
+
+export const getProduct = (state) => {
+    return state.product
+}

@@ -1,24 +1,57 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <slot></slot>
-  </div>
+  <div>done</div>
 </template>
-
 <script>
 export default {
   name: 'HelloWorld',
   props: ['msg', 'items'],
   
-  mounted() {
-    console.log("this.items1", this.items)
+data() {
+    return {
+      clickCount: 0,
+    }
   },
-  created() {
-    //console.log("this.msg", this.msg)
-    console.log("this.items", this.items)
+  computed: {
+    backgroundColor() {
 
+      if(this.clickCount % 2 === 0) {
+        return { 'backgroundColor': 'pink'}
+      } else {
+         return { 'backgroundColor': 'red'}
+      }
+ 
+    }
+  },
+  methods: {
+    onClick() {
+
+      console.log(this.backgroundColor)
+      this.clickCount += 1;
+    }
+  },
+  render(createElement) {
+    const button = createElement('button', {
+      on: {
+        click: this.onClick
+      }
+    }, 'Click me');
+    
+    const counter = createElement('span', {
+      class: this.backgroundColor,
+    }, [
+      'Number of clicks:',
+      this.clickCount
+    ]);
+    
+    return createElement('div', [
+      button, counter
+    ])
   }
  }
+
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -36,5 +69,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.backgroundColor {
+  color: red
 }
 </style>

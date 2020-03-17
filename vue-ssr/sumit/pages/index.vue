@@ -42,6 +42,8 @@ export default {
     }
   },
   mounted() {
+
+    console.log(window.navigator)
     fetch('https://api.cloud.altbalaji.com/zuul/catalogue/balaji/catalogue/filters/trending-home-1?domain=IN&page=1&size=12').then((res) => {
       return res.json();
     }).then((data) =>{

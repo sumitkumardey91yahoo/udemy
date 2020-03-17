@@ -8,7 +8,8 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state: {
         color: 'red',
-        name: 'mobiotics'
+        name: 'mobiotics',
+        product: []
     },
     getters,
     mutations: abc,
