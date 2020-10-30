@@ -1,0 +1,45 @@
+
+
+function Cook (foodName) {
+    var time = 0;
+  switch(foodName) {
+    case 'tea': 
+       time = 1000;
+    break;
+    case 'meal': 
+       time = 2000;
+       break;
+    case 'milk': 
+       time = 200;
+       
+       break;  
+
+  }
+
+  return time;
+
+}
+
+function foodOrderingAndMaking(customerID, timeCounter, foodName) {
+
+    setTimeout(function () {
+        console.log("cutomerID ||", customerID, " ||foodName", foodName)
+    }, timeCounter)
+
+}
+
+function customer(customerID, foodName) {
+
+  var timeCounter  = Cook(foodName)
+
+  foodOrderingAndMaking(customerID, timeCounter, foodName);
+
+}
+
+
+
+customer(1, 'tea');//
+customer(2, 'meal');
+customer(3, 'milk');
+customer(4, 'meal');
+customer(5, 'meal');
