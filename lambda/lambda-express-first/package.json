@@ -16,6 +16,6 @@
   },
   "devDependencies": {
     "mysql": "^2.18.1",
-    "serverless": "^1.50.1"
+    "serverless": "^3.25.1"
   }
 }
